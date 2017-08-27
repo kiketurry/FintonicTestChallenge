@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/super_hero_real_name"
+            style="@style/activity_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Real Name"/>
+
+        <ImageView
+            android:id="@+id/super_hero_image"
+            style="@style/activity_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/super_hero_height"
+                style="@style/activity_detail_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_detail_height"/>
+
+            <TextView
+                android:id="@+id/super_hero_height_data"
+                style="@style/activity_detail_info_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="3.88m"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/super_hero_power"
+            style="@style/activity_detail_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_detail_power"/>
+
+        <TextView
+            android:id="@+id/super_hero_power_data"
+            style="@style/activity_detail_info_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Minions ipsum me want bananaaa! Tatata bala tu chasy ti aamoo! Ti aamoo! Aaaaaah bee do bee do bee do hahaha chasy. Bananaaaa baboiii la bodaaa ti aamoo! Ti aamoo!"/>
+
+        <TextView
+            android:id="@+id/super_hero_abilities"
+            style="@style/activity_detail_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_detail_abilities"/>
+
+        <TextView
+            android:id="@+id/super_hero_abilities_data"
+            style="@style/activity_detail_info_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Butt hana dul sae uuuhhh me want bananaaa! Ti aamoo! Gelatooo tulaliloo tank yuuu! Pepete butt. Uuuhhh ti aamoo! Tank yuuu! Butt daa aaaaaah jeje baboiii."/>
+
+        <TextView
+            android:id="@+id/super_hero_groups"
+            style="@style/activity_detail_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_detail_groups"/>
+
+        <TextView
+            android:id="@+id/super_hero_groups_data"
+            style="@style/activity_detail_info_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Me want bananaaa! pepete baboiii gelatooo. Ti aamoo! pepete potatoooo pepete bee do bee do bee do gelatooo chasy. Daa tatata bala tu pepete tank yuuu! Po kass para tú. Tulaliloo daa hana dul sae baboiii daa chasy belloo!"/>
+
+    </LinearLayout>
+</ScrollView>

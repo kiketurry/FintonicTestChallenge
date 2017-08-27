@@ -1,2 +1,0 @@
-# FintonicTestChallenge
-Fintonic Test Challenge

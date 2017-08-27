@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FintonicTestChallenge</string>
+    <string name="problem_download_heroes">Super héroes de fiesta, inténtelo de nuevo más tarde.</string>
+    <string name="loading">Cargando...</string>
+    <string name="activity_detail_height">Height:</string>
+    <string name="activity_detail_power">Power:</string>
+    <string name="activity_detail_abilities">Abilities:</string>
+    <string name="activity_detail_groups">Groups:</string>
+    <string name="title_actionbar_list_activity">Marvel Super Heroes</string>
+    <string name="title_actionbar_detail_activity">Detail Super Hero</string>
+</resources>
