@@ -1,5 +1,9 @@
 package com.fintonic.fintonictestchallenge.domain.usecases;
 
+import com.fintonic.fintonictestchallenge.data.datastores.DataStoreMediator;
+
+import javax.inject.Inject;
+
 import rx.Subscriber;
 import rx.functions.Action0;
 import rx.functions.Action1;
@@ -9,6 +13,9 @@ import rx.functions.Action1;
  */
 
 public class UseCase<T> extends Subscriber<T> implements Command<T> {
+    
+    @Inject
+    DataStoreMediator dataStoreMediator;
     
     private Action0 complete;
     private Action1<T> success;

@@ -11,10 +11,14 @@ import rx.functions.Action1;
 
 public class ObtainMarvelSuperHeroesUseCase extends UseCase<ListSuperHeroesModel> {
     
+    public ObtainMarvelSuperHeroesUseCase() {
+        FintonicTestChallengeApplication.getComponent().inject(this);
+    }
+    
     @Override
     public void execute(Action1<ListSuperHeroesModel> success, Action1<Throwable> failure) {
         super.execute(success, failure);
-        
-        FintonicTestChallengeApplication.getDataStoreMediator().listSuperHeroes().subscribe(this);
+    
+        dataStoreMediator.listSuperHeroes().subscribe(this);
     }
 }
