@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.fintonic.fintonictestchallenge.R;
 import com.fintonic.fintonictestchallenge.domain.models.SuperHeroModel;
+import com.fintonic.fintonictestchallenge.utils.StringUtils;
 
 import java.util.ArrayList;
 
@@ -57,11 +58,12 @@ public class ListMarverlSuperHeroesAdapter extends RecyclerView.Adapter<ListMarv
     
     @Override
     public void onBindViewHolder(SuperHeroViewHolder superHeroViewHolder, int position) {
+        SuperHeroModel superHeroModel = listSuperHeroes.get(position);
         Glide.with(context)
-                .load(listSuperHeroes.get(position).getPhotoUrl())
+                .load(superHeroModel.getPhotoUrl())
                 .into(superHeroViewHolder.superHeroImage);
-        superHeroViewHolder.superHeroName.setText(listSuperHeroes.get(position).getName());
-        superHeroViewHolder.superHeroCardView.setOnClickListener(view -> actionClickOnSuperHero.call(listSuperHeroes.get(position)));
+        superHeroViewHolder.superHeroName.setText(StringUtils.nickAndName(superHeroModel.getName(), superHeroModel.getRealName()));
+        superHeroViewHolder.superHeroCardView.setOnClickListener(view -> actionClickOnSuperHero.call(superHeroModel));
     }
     
     @Override
